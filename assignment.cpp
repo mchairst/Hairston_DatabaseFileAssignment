@@ -60,7 +60,8 @@ struct Person *search(string id) {
 } 
 //Note: the line in bold where file.seekg uses 40 bytes from current file position. Explain why it is 40?
 
-//The next function is get an employee information from the employee id, the function get_employee ask the user to enter the employee id and call the function search and display output.
+//The next function is get an employee information from the employee id, the function get_employee ask the user
+// to enter the employee id and call the function search and display output.
 void get_employee() {
 	string empId;
 	// Ask the user to enter the employee id to get its information, complete code below
@@ -74,10 +75,11 @@ void get_employee() {
         cout << "Employee not found" << endl;
     } else{ cout << "Employee found: " << p2->id << " " 
             << p2->firstName << " " << p2->lastName << " " << p2->income << endl;
-    }
+    } 
 	
 	// Check if the pointer returned is null, then print employee not found
 	// otherwise display pointer information.
+
 	
 }
 //The function list will list all employees’ information:
